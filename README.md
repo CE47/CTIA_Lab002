@@ -1,7 +1,6 @@
 # CTI Casefile 002 — The Phantom Administrator
 
-A single-page, browser-based **cyber threat intelligence investigation simulator**,
-built from the scenario spec in `new.scenario`.
+A single-page, browser-based cyber threat intelligence investigation simulator.
 
 You are a Tier 1 escalation analyst. Three alerts fired on one workstation and nobody
 has told you which of them matter. You get the raw event stream, three alerts, an
