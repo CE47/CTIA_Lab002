@@ -5,7 +5,7 @@
 (function () {
   'use strict';
 
-  var LINK_VERBS = ['created', 'launches', 'uses', 'connects to', 'corresponds to',
+  var LINK_VERBS = ['created', 'added to', 'log on as', 'launches', 'uses', 'connects to', 'corresponds to',
                     'logged in to', 'hosts', 'authenticates', 'downloads from', 'executes'];
 
   function $$(s, r) { return Array.prototype.slice.call((r || document).querySelectorAll(s)); }
