@@ -252,7 +252,9 @@
 
   Board.prototype.addLink = function (from, to, verb) {
     var verdict = this.sc.boardLinks.filter(function (l) {
-      return l.from === from && l.to === to && l.label === verb;
+      var sameRelation = l.label === verb ||
+        (verb === 'authenticates' && l.label === 'authenticates as');
+      return l.from === from && l.to === to && sameRelation;
     })[0];
 
     this.pairs.push({ from: from, to: to, label: verb, correct: !!(verdict && verdict.correct) });
